@@ -17,7 +17,7 @@ The preferred languages that you might use are Java, C, C++ or Python3. Other la
 - Have a meaning
 - Must be useful to the community
 
-Once you make sure that you don't disobey any of the above, create a PR with the title as the name of the code and description of the what the code does.
+Once you make sure that you don't disobey any of the above, create a PR with the title as the name of the code and description of the what the code does. Also update the roadmap alongside.
 
 Issues can be created only for -> New code creation, Updation of existing code, edit of any static resource (README.md for example). If you create a PR for any issue, make sure to mention the #tag of the issue to make it easier for us to search.
 
@@ -30,6 +30,7 @@ Issues can be created only for -> New code creation, Updation of existing code, 
     * [Heapsort](./design_and_analysis_of_algorithms/heapsort.cpp)
     * [Kruskal's MST Algorithm](./design_and_analysis_of_algorithms/kruskal.cpp)
     * [Prim's MST Algorithm](./design_and_analysis_of_algorithms/prims_code.cpp)
+    * [Dijkstra's Shortest Path Algorithm](./design_and_analysis_of_algorithms/dijkstras_algorithm.cpp)
 
 2. ### [Numerical Analysis](./numerical_analysis/)
     #### C
