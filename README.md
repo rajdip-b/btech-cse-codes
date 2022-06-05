@@ -40,3 +40,5 @@ Issues can be created only for -> New code creation, Updation of existing code, 
     * [Regula Falsi (False position) Method](./numerical_analysis/regula_falsi.c)
     * [Simpson's Rule](./numerical_analysis/simpsons_rule.c)
     * [Trapeziodal Rule](./numerical_analysis/trapezoidal_rule.c)
+    * [Runge-Kutta method](./numerical_analysis/runge_kutta.c)
+    * [Euler's ODE Method](./numerical_analysis/eulers_ode.c)
