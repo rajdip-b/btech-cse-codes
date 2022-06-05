@@ -3,7 +3,7 @@
 #include <vector>
 using namespace std;
 
-double fractional_knapsack(vector<int> weights, vector<int> values, int items, int size) {
+pair<double, double> fractional_knapsack(vector<int> weights, vector<int> values, int items, int size) {
     map<double, pair<double, double>> data; // <fraction, <value, weight>> 
     cout<<"Value\tWeight\tFraction"<<endl;
     for (int x=0;x<items;x++) {
@@ -13,23 +13,25 @@ double fractional_knapsack(vector<int> weights, vector<int> values, int items, i
         cout<<value<<"\t"<<weight<<"\t"<<fraction<<endl;
         data.insert(make_pair(fraction, make_pair(value, weight)));
     }
-    double ans = 0.0;
+    double ansValue = 0.0, ansWeight = 0.0;
     for (auto itr = data.rbegin(); itr != data.rend(); itr++) {
         if (size == 0)
-            return ans;
+            break;
 
         double value = itr->second.first;
         double weight = itr->second.second;
 
         if (size >= weight) {
-            ans += value*(size/(int)weight);
+            ansValue += value*(size/(int)weight);
+            ansWeight += weight*(size/(int)weight);
             size %= (int)weight;
         }else {
-            ans += value*((double)size/weight);
-            return ans;
+            ansValue += value*((double)size/weight);
+            ansWeight += weight*((double)size/weight);
+            break;
         }
     }
-    return ans;
+    return make_pair(ansValue, ansWeight);
 }
 
 int main() {
@@ -43,7 +45,7 @@ int main() {
         values.push_back(a);
         weights.push_back(b);
     }
-    double ans = fractional_knapsack(weights, values, items, size);
-    cout<<"\nMax value: "<<ans<<endl;
+    auto ans = fractional_knapsack(weights, values, items, size);
+    cout<<"\nMax value: "<<ans.first<<"\tMax weight: "<<ans.second<<endl;
     return 0;
 }
