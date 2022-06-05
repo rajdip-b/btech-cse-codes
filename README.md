@@ -31,6 +31,7 @@ Issues can be created only for -> New code creation, Updation of existing code, 
     * [Kruskal's MST Algorithm](./design_and_analysis_of_algorithms/kruskal.cpp)
     * [Prim's MST Algorithm](./design_and_analysis_of_algorithms/prims_code.cpp)
     * [Dijkstra's Shortest Path Algorithm](./design_and_analysis_of_algorithms/dijkstras_algorithm.cpp)
+    * [Fractional Knapsack Problem](./design_and_analysis_of_algorithms/fractional_knapsack.cpp)
 
 2. ### [Numerical Analysis](./numerical_analysis/)
     #### C
