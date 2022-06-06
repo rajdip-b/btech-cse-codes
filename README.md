@@ -32,6 +32,8 @@ Issues can be created only for -> New code creation, Updation of existing code, 
     * [Prim's MST Algorithm](./design_and_analysis_of_algorithms/prims_code.cpp)
     * [Dijkstra's Shortest Path Algorithm](./design_and_analysis_of_algorithms/dijkstras_algorithm.cpp)
     * [Fractional Knapsack Problem](./design_and_analysis_of_algorithms/fractional_knapsack.cpp)
+    * [Quicksort Algorithm](./design_and_analysis_of_algorithms/quicksort.cpp)
+    * [Mergesort ALgorithm](./design_and_analysis_of_algorithms/mergesort.cpp) 
 
 2. ### [Numerical Analysis](./numerical_analysis/)
     #### C
